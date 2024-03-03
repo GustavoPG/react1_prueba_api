@@ -1,4 +1,4 @@
-const Buscador = ({ searchText, setSearchText }) => {
+const Buscador = ({ searchText }) => {
     
     const handleSearchChange = (event) => {
         searchText(event.target.value.trim());
