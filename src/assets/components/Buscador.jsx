@@ -1,11 +1,13 @@
-const Buscador = ({ searchText, handleSearchChange }) => {
-
+const Buscador = ({ searchText, setSearchText }) => {
+    
+    const handleSearchChange = (event) => {
+        searchText(event.target.value.trim());
+      };
     return (
         <div className="col col-md-8 col-sm-12 py-2">
             <input className="my-search"
                 type="text"
                 placeholder="Búsqueda..."
-                value={searchText}
                 onChange={handleSearchChange}
             />
         </div>

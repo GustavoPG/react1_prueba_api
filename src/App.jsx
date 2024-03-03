@@ -24,7 +24,7 @@ function App() {
         </h6>
       </footer>
     </>
-  )
-}
+  );
+};
 
 export default App;

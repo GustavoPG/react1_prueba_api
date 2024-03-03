@@ -25,10 +25,6 @@ const MiApi = (props) => {
     fetchData();
   }, []);
 
-  const handleSearchChange = (event) => {
-    setSearchText(event.target.value.trim());
-  };
-
   const handleSortChange = (event) => {
     setSortOption(event.target.value);
   };
@@ -64,8 +60,7 @@ const MiApi = (props) => {
       <div className="container mb-3">
       <div className="row">
         <Buscador
-          searchText={searchText}
-          handleSearchChange={handleSearchChange}
+          searchText={setSearchText}
         />
         <Order 
         sortOption={sortOption} 
